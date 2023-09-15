@@ -39,24 +39,49 @@ body {
     text-align: center; 
 }
 
-#userSearch {
+form {
     width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#userSearch {
+    width: 100%;
     padding: 0.7rem;
     display: flex;
     background: white;
-    margin-left: 160px;
     border-radius: 7px;
-    border: 1px solid #FFCC00;
+    border: none;
+    outline: none;
+    &:focus{
+        border: 2px solid #FFCC00;
+    }
+    &::-webkit-calendar-picker-indicator {
+        display: none !important;
+      }
 }
+
 
 ul, li {
     display: flex;
     flex-direction: row;;
     text-decoration: none;
     gap: 3rem;
+    font-size: 1.2rem;
 }
 
 img {
     width: inherit;
     height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5S 0S ease;
+
+    &:hover {
+        transform: scale(1.3);
+        font-size: 1.94rem;
+    }
 }

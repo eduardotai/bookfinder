@@ -10,12 +10,20 @@
     
     <div class="mainContainer">
         <div class="menuHeader">
-            <input type="text" id="userSearch" placeholder="Digite o livro que deseja pesquisar"></input>
+            <form>
+                <input type="search" id="userSearch" placeholder="Digite o livro que deseja pesquisar" list="suggestions"></input>
+                <dataList id="suggestions">
+                    <option value="Teste1"></option>
+                    <option value="Teste2"></option>
+                    <option value="Teste3"></option>
+                    <option value="Teste4"></option>
+                </dataList>
+            </form>
             <nav id="navBar">
                 <ul>
-                    <li>Author</li>
-                    <li>Date</li>
-                    <li>Gender</li>
+                    <a href="#"><li>Author</li></a>
+                    <a href="#""><li>Date</li></a>
+                    <a href="#""><li>Gender</li></a>
                 </ul>
             </nav>
         </div>
